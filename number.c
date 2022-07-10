@@ -72,6 +72,7 @@ int print_address(va_list ap, params_t *params)
 {
 	unsigned long int n = va_arg(ap, unsigned long int);
 	char *str;
+	char k;
 
 	if (!n)
 		return (_puts("(nil)"));

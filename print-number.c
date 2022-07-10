@@ -20,6 +20,7 @@ int _isdigit(int c)
 int _strlen(char *s)
 {
 	int i = 0;
+	char k;
 
 	while (*s++)
 		i++;

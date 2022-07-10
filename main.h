@@ -23,6 +23,7 @@
  * struct parameters - parameters struct
  *
  * @unsign: flag if unsigned value
+ *
  * @plus_flag: on if plus_flag specified
  * @space_flag: on if hashtag_flag specified
  * @hashtag_flag: on if _flag specified
@@ -34,10 +35,12 @@
  *
  * @h_modifier: on if h_modifier is specified
  * @l_modifier: on if l_modifier is specified
+ *
  */
 typedef struct parameters
 {
-	unsigned int unsign		: 1;
+	unsigned int unsign			: 1;
+
 	unsigned int plus_flag		: 1;
 	unsigned int space_flag		: 1;
 	unsigned int hashtag_flag	: 1;
@@ -112,4 +115,5 @@ char *get_precision(char *p, params_t *params, va_list ap);
 
 /* _prinf.c module */
 int _printf(const char *format, ...);
+
 #endif

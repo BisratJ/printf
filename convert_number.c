@@ -10,6 +10,7 @@
 int print_hex(va_list ap, params_t *params)
 {
 	unsigned long l;
+	unsigned int k;
 	int c = 0;
 	char *str;
 
